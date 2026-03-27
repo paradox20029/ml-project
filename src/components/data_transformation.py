@@ -139,10 +139,12 @@ import os
 
 from src.utils import save_object
 
-@dataclass
-class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+# Add these 3 lines at the TOP of the file (after imports)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(current_dir))
 
+class DataTransformationConfig:  # this class is used to define the configuration for data transformation
+    preprocessor_obj_file_path = os.path.join(project_root, 'artifacts', 'preprocessor.pkl')
 class DataTransformation:
     def __init__(self):
         self.data_transformation_config=DataTransformationConfig()
