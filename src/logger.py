@@ -3,14 +3,10 @@ import os
 from datetime import datetime
 import sys
 
-from src.exception import CustomException
-
-from src.exception import CustomException
-
 LOF_FILE=f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
 
 #path for log file
-logs_path=os.path.join(os.getcwd(),'logs',LOF_FILE)
+logs_path=os.path.join(os.path.dirname(__file__), '..', 'logs', LOF_FILE)
 os.makedirs(logs_path,exist_ok=True)
 
 LOG_FILE_PATH=os.path.join(logs_path,LOF_FILE)
