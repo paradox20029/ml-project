@@ -7,8 +7,7 @@ LOF_FILE=f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
 
 #path for log file
 logs_path=os.path.join(os.path.dirname(__file__), '..', 'logs', LOF_FILE)
-os.makedirs(logs_path,exist_ok=True)
-
+os.makedirs(logs_path,exist_ok=True) 
 LOG_FILE_PATH=os.path.join(logs_path,LOF_FILE)
 
 #overrite the logging functionality to log the message in log file
