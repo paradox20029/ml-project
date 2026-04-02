@@ -8,7 +8,7 @@ env:
   AWS_REGION: ap-south-1                  # Your region
   ECR_REPOSITORY: ml-student-prediction   # Your repository name
   EB_APPLICATION_NAME: ml-v2              # Your Beanstalk App Name
-  EB_ENVIRONMENT_NAME: ml-v2-docker      # Your Beanstalk Env Name
+  EB_ENVIRONMENT_NAME: ml-v2-env     # Your Beanstalk Env Name
 
 permissions:
   contents: read
