@@ -5,5 +5,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Add this line to document the port
 EXPOSE 5000
-
+      
 CMD ["python3", "application.py"]
